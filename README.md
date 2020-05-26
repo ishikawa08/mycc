@@ -1,0 +1,2 @@
+# mycc
+C lang compiler
