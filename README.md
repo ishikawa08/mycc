@@ -6,14 +6,22 @@ C langage compiler
 
 This works on Docker.
 
-`docker build -t c_compiler`
+Build docker
+`docker build --force-rm=true -t c_compiler .`
 
-`docker run --rm -v $HOME/hoge/mycc:/mycc -w /mycc c_compiler make`
+Removing docker container
+`docker rm -f [CONTAINER ID]`
+
+Removing docker image
+`docker rmi -f [IMAGE ID]`
+
+Running
+`docker run --rm -v $HOME/[hoge]/mycc:/mycc -w /mycc c_compiler [make]`
 
 ## Build
-Run make to build:
+Run making to build:
 `make`
 
-unit test:
+Run unit test:
 `make test`
 
