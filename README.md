@@ -1,27 +1,37 @@
-# My C Compiler
+# C lang Compiler
 
-C langage compiler
+My C language compiler
 
 ## Docker
 
 This works on Docker.
 
-Build docker
+### Build docker
+
 `docker build --force-rm=true -t c_compiler .`
 
-Removing docker container
-`docker rm -f [CONTAINER ID]`
+### Run Docker
 
-Removing docker image
-`docker rmi -f [IMAGE ID]`
-
-Running
 `docker run --rm -v $HOME/[hoge]/mycc:/mycc -w /mycc c_compiler [make]`
 
-## Build
-Run making to build:
+### Remove docker container
+
+`docker ps -a`
+
+`docker rm -f [CONTAINER ID]`
+
+### Remove docker image
+
+`docker images`
+
+`docker rmi -f [IMAGE ID]`
+
+
+## Make commands
+
+### make
 `make`
 
-Run unit test:
+### Run unit test:
 `make test`
 
